@@ -110,14 +110,14 @@ HELP_MSG = "Click the button below to get help manu in your pm."
 START_MSG = "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>"
 
 PM_START_TEXT = """
-────「 [{}](https://telegra.ph/file/29a1f88c7f200d4959359.jpg) 」────
+────「 [{}](https://telegra.ph/file/ccc9b76512bfdda7036f0.jpg) 」────
 *ʜᴇʏ! {},*
-*ɪ ᴀᴍ 𝙈𝘼𝙍𝙄𝙉 ᴀ ᴍᴜʟᴛɪғᴜɴᴄᴛɪᴏɴᴀʟ ᴀɴɪᴍᴇ ᴛʜᴇᴍᴇᴅ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ.*
+*ɪ ᴀᴍ 𝐍𝐞𝐳𝐮𝐤𝐨 ᴀɴ ᴀɴɪᴍᴇ ᴛʜᴇᴍᴇᴅ ᴀᴅᴠᴀɴᴄᴇ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ ꜱᴇᴠᴇʀᴀʟ ꜱᴘᴇᴄɪᴀʟɪᴛɪᴇꜱ.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ✓• *Uᴘᴛɪᴍᴇ:* `{}`
 ✓• `{}` *Uꜱᴇʀ, Aᴄʀᴏꜱꜱ* `{}` *Cʜᴀᴛꜱ.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-➛ʜɪᴛ /help ᴛᴏ ᴋɴᴏᴡ ᴍʏ ᴀʙɪʟɪᴛɪᴇs. ××
+➛ᴛʀʏ ᴛʜᴇ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ᴛᴏ ᴋɴᴏᴡ ᴍʏ ᴅᴇᴍᴏɴ ᴀʙɪʟɪᴛɪᴇs ××
 """
 
 GROUP_START_TEXT = """
@@ -143,7 +143,7 @@ buttons = [
 
 
 HELP_STRINGS = """
-Hey there! Myself [Marin](https://telegra.ph/file/733ad56ef80d133fac966.jpg).
+Hey there! Myself [𝐍𝐞𝐳𝐮𝐤𝐨](https://telegra.ph/file/986a94e93a8696b4450c2.jpg).
 I'm a Queen For Fun and help admins manage their groups ! Have a look at the following for an idea of some of the things I can help you with.
 *Main* commands available:
  ➛ /help: PM's you this message.
@@ -279,7 +279,7 @@ def start(update: Update, context: CallbackContext):
     else:
         update.effective_message.reply_animation(
             GROUP_START_IMG,
-            caption="<code> Marin is Here For You\nI am Awake Since</code>: <code>{}</code>".format(
+            caption="<code> 𝐍𝐞𝐳𝐮𝐤𝐨 is Here For You💜\nI am Awake Since</code>: <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -287,24 +287,19 @@ def start(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/NobaraSupport"
+                            text="sᴜᴘᴘᴏʀᴛ", url=f"https://telegram.dog/{SUPPORT_CHAT}"
                         )
                     ],
                     [
                         InlineKeyboardButton(
                             text="ᴜᴘᴅᴀᴛᴇs",
-                            url="https://telegram.dog/MarinUpdates",
-                        )
-                    ],
-                                        [
-                        InlineKeyboardButton(
-                            text="AOGIRI UNION",
-                            url="https://telegram.dog/AogiriNetwork",
+                            url="https://telegram.dog/NezukoXUpdates",
                         )
                     ],
                 ]
             ),
         )
+
 
 
 def error_handler(update, context):
@@ -439,12 +434,13 @@ def marin_callback_data(update, context):
     if query.data == "marin_":
         query.message.edit_text(
             text="""
-        ❍[Owner](https://t.me/Xtheanonymous)💜
-        ❍[Updates](https://t.me/NobaraSupport)🧡
-        ❍[Suppσrt](https://t.me/NobaraSupport)🤍
-        ❍[Suppσrt](https://t.me/NobaraSupport)💚
-        ❍ [ChatGrp](https://t.me/AnimeChatAura)❤️
-        ✨[Vc Player Help](https://telegra.ph/file/bc78aaf26976f892d6478.jpg)✨""",
+ℹ️ ι'м *𝐍𝐞𝐳𝐮𝐤𝐨*, α ρσωєяfυℓ gяσυρ мαиαgємєит вσт вυιℓт тσ нєℓρ уσυ мαиαgє уσυя gяσυρ єαѕιℓу.
+        ❍ 💜[Owner](https://t.me/hiro_kun_14)💜
+        ❍ 🧡[Updates](https://t.me/NezukoXUpdates)🧡
+        ❍ 🤍[Suppσrt](https://t.me/NezukoXSupport)🤍
+        ❍ 💚[Suppσrt](https://t.me/NezukoXSupport)💚
+        ❍ ❤️[ChatGrp](https://t.me/otakualliance)❤️
+        ✨[Vc Player Help](https://telegra.ph/file/986a94e93a8696b4450c2.jpg)✨""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -456,7 +452,7 @@ def marin_callback_data(update, context):
             text=f"*Here's basic Help regarding* *How to use Me?*"
             f"\n\n• Firstly Add {dispatcher.bot.first_name} to your group by pressing [here](http://t.me/{dispatcher.bot.username}?startgroup=true)\n"
             f"\n• After adding promote me manually with full rights for faster experience.\n"
-            f"\n• Than send `/admincache@Hiro` in that chat to refresh admin list in My database.\n"
+            f"\n• Than send `/admincache@NezukoXRobot` in that chat to refresh admin list in My database.\n"
             f"\n\n*All done now use below given button's to know about use!*\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
@@ -469,7 +465,7 @@ def marin_callback_data(update, context):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="sᴜᴘᴘᴏʀᴛ", callback_data="NobaraSupport"
+                            text="sᴜᴘᴘᴏʀᴛ", callback_data="NezukoXsupport"
                         ),
                         InlineKeyboardButton(
                             text="ᴄʀᴇᴅɪᴛ", callback_data="marin_credits"
@@ -523,9 +519,9 @@ def marin_callback_data(update, context):
                 ]
             ),
         )
-    elif query.data == "Nobarasupport":
+    elif query.data == "NezukoXsupport":
         query.message.edit_text(
-            text="* Marin support chats*" "\nJoin Support Group/Channel",
+            text="* Nezuko support chats*" "\nJoin Support Group/Channel",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -537,10 +533,10 @@ def marin_callback_data(update, context):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/NobaraSupport"
+                            text="sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/NezukoXsupport"
                         ),
                         InlineKeyboardButton(
-                            text="ᴜᴘᴅᴀᴛᴇs", url="https://t.me/NobaraSupport"
+                            text="ᴜᴘᴅᴀᴛᴇs", url="https://t.me/NezukoXsupport"
                         ),
                     ],
                     [
@@ -559,7 +555,7 @@ def marin_callback_data(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url="t.me/Xtheanonymous"),
+                        InlineKeyboardButton(text="ᴏᴡɴᴇʀ", url="t.me/Hiro_kun_14"),
                         InlineKeyboardButton(
                             text="ɢɪᴛʜᴜʙ", url="https://github.com/Unknown-san"
                         ),
@@ -569,7 +565,7 @@ def marin_callback_data(update, context):
                             text="ᴅᴇᴠ", url="https://t.me/Xtheanonymous"
                         ),
                         InlineKeyboardButton(
-                            text="ꜱᴜᴅᴏ", url="https://t.me/NobaraSupport"
+                            text="ꜱᴜᴅᴏ", url="https://t.me/NezukoXsupport"
                         ),
                     ],
                     [
@@ -851,7 +847,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}",
-                " I am ready to work [.](https://telegra.ph/file/e36d740c802879c68dda6.mp4)",
+                " I am ready to work [.](https://telegra.ph/file/b2c9110cc821930f95e3c.mp4)",
                 parse_mode=ParseMode.MARKDOWN,
             )
         except Unauthorized:
