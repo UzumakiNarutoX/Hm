@@ -26,14 +26,14 @@ from Hiro import (
     DEV_USERS,
     EVENT_LOGS, 
     BOT_USERNAME,
-    ubot,
+    ubot2,
 )
 from Hiro import pbot as app 
 from Hiro import arq
 from Hiro.services.keyboard import Ikb
 from Hiro.utils.pluginhelper import convert_seconds_to_minutes as time_convert, fetch
-from Hiro.pyrogramee.tasks import _get_tasks_text, all_tasks, rm_task
-from Hiro.pyrogramee.types import InlineQueryResultCachedDocument
+from Hiro.services.tasks import _get_tasks_text, all_tasks, rm_task
+from Hiro.services.types import InlineQueryResultCachedDocument
 from Hiro.modules.info import get_chat_info, get_user_info
 from Hiro.modules.music import download_youtube_audio
 from Hiro.utils.functions import test_speedtest
