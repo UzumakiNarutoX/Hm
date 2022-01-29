@@ -114,8 +114,11 @@ PM_START_TEXT = """
 *ʜᴇʏ! {},*
 *ɪ ᴀᴍ 𝐍𝐞𝐳𝐮𝐤𝐨 ᴀɴ ᴀɴɪᴍᴇ ᴛʜᴇᴍᴇᴅ ᴀᴅᴠᴀɴᴄᴇ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴡɪᴛʜ ꜱᴇᴠᴇʀᴀʟ ꜱᴘᴇᴄɪᴀʟɪᴛɪᴇꜱ.*
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-✓• *Uᴘᴛɪᴍᴇ:* `{}`
-✓• `{}` *Uꜱᴇʀ, Aᴄʀᴏꜱꜱ* `{}` *Cʜᴀᴛꜱ.*
+╔══════•❃°•°❀°•°❃═══════╗
+✓• *Uᴘᴛɪᴍᴇ:* {}
+  ━━━━━━ ❆ ━━━━━━
+✓• {} *Uꜱᴇʀ, Aᴄʀᴏꜱꜱ* {} *Cʜᴀᴛꜱ.*
+╚══════•❃°•°❀°•°❃═══════╝
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ➛ᴛʀʏ ᴛʜᴇ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴs ʙᴇʟᴏᴡ ᴛᴏ ᴋɴᴏᴡ ᴍʏ ᴅᴇᴍᴏɴ ᴀʙɪʟɪᴛɪᴇs ××
 """
@@ -426,7 +429,7 @@ def help_button(update, context):
 
     except BadRequest:
         pass
-GROUP_START_IMG = "https://telegra.ph/file/e36d740c802879c68dda6.mp4"
+GROUP_START_IMG = "https://telegra.ph/file/b2c9110cc821930f95e3c.mp4"
 
 def marin_callback_data(update, context):
     query = update.callback_query
