@@ -26,14 +26,14 @@ from Hiro import (
     DEV_USERS,
     EVENT_LOGS, 
     BOT_USERNAME,
-    ubot2,
+    ubot,
 )
 from Hiro import pbot as app 
 from Hiro import arq
 from Hiro.services.keyboard import Ikb
 from Hiro.utils.pluginhelper import convert_seconds_to_minutes as time_convert, fetch
-from Hiro.services.tasks import _get_tasks_text, all_tasks, rm_task
-from Hiro.services.types import InlineQueryResultCachedDocument
+from Hiro.pyrogramee.tasks import _get_tasks_text, all_tasks, rm_task
+from Hiro.pyrogramee.types import InlineQueryResultCachedDocument
 from Hiro.modules.info import get_chat_info, get_user_info
 from Hiro.modules.music import download_youtube_audio
 from Hiro.utils.functions import test_speedtest
@@ -102,7 +102,7 @@ async def inline_help_func(__HELP__):
             input_message_content=InputTextMessageContent(
                 "**__Click A Button To Get Started.__**"
             ),
-            thumb_url="https://telegra.ph/file/1b8f08dba704a5eb2bb09.jpg",
+            thumb_url="https://telegra.ph/file/dad7863c0db4ac921982d.jpg",
             reply_markup=buttons,
         ),
     ]
@@ -115,27 +115,27 @@ async def alive_function(answers):
     bot_state = "Dead" if not await app.get_me() else "Alive"
     ubot_state = "Dead" if not await ubot2.get_me() else "Alive"
     buttons.add(
-        InlineKeyboardButton("Main bot", url="https://t.me/EmiexRobot"),
+        InlineKeyboardButton("Main bot", url="https://t.me/YurikoRobot"),
         InlineKeyboardButton(
             "Go Inline!", switch_inline_query_current_chat=""
         ),
     )
 
     msg = f"""
-**[Robot ❤️](https://t.me/Superior_bots):**
+**[Yuriko Robot ❤️](https://t.me/decodesupport):**
 **MainBot:** `{bot_state}`
 **UserBot:** `{ubot_state}`
 **Python:** `{pyver.split()[0]}`
 **Pyrogram:** `{pyrover}`
 **MongoDB:** `{mongover}`
 **Platform:** `{sys.platform}`
-**Profiles:** [BOT](t.me/{BOT_USERNAME}) | [UBOT](t.me/Timesisnotwaiting)
+**Profiles:** [BOT](t.me/{BOT_USERNAME}) | [UBOT](t.me/TeamDeeCode)
 """
     answers.append(
         InlineQueryResultArticle(
             title="Alive",
             description="Check Bot's Stats",
-            thumb_url="https://telegra.ph/file/be24bbabbe0ec30dff489.jpg",
+            thumb_url="https://telegra.ph/file/dad7863c0db4ac921982d.jpg",
             input_message_content=InputTextMessageContent(
                 msg, disable_web_page_preview=True
             ),
