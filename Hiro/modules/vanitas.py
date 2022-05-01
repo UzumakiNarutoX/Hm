@@ -32,7 +32,7 @@ from Hiro.modules.log_channel import gloggable
 
 v = vanitas()
 
-logging.info("Vanitas System Module by Pranav Ajay [github.com/Moezilla] @KazutoSuperbot)
+logging.info("Vanitas System Module by Pranav Ajay [github.com/Moezilla] @KazutoSuperbot")
 
 
 @user_admin_no_reply
