@@ -1,4 +1,4 @@
-"""import traceback
+""" import traceback """
 
 from Hiro import pbot as app
 from Hiro.utils.pluginhelp import fetch
